@@ -20,9 +20,9 @@ Note: 'pizza' should be the first item in the array, followed by 'cheeseburger'.
 Complete Exercise 2 in the space below:
 */
 
-const foods2 = ['pizza', 'cheeseburger'];
+const foods = ['pizza', 'cheeseburger'];
 
-console.log('Exercise 2 result:', foods2);
+console.log('Exercise 2 result:', foods);
 
 /*
 Exercise 3: Insert at the beginning
@@ -32,9 +32,9 @@ Exercise 3: Insert at the beginning
 Complete Exercise 3 in the space below:
 */
 
-const newFood = foods2.unshift('taco');
+const newFood = foods.unshift('taco');
 
-console.log('Exercise 3 result:', foods2);
+console.log('Exercise 3 result:', foods);
 
 /*
 Exercise 4: Access an array element
@@ -47,7 +47,7 @@ Exercise 4: Access an array element
 Complete Exercise 4 in the space below:
 */
 
-const favFood = foods2[1];
+const favFood = foods[1];
 
 console.log('Exercise 4 result:', favFood);
 
@@ -59,6 +59,18 @@ Exercise 5: Insert an element between two others
 Complete Exercise 5 in the space below:
 */
 
-foods2.splice(2, 0, 'tofu');
+foods.splice(2, 0, 'tofu');
 
-console.log('Exercise 5 result:', foods2);
+console.log('Exercise 5 result:', foods);
+
+/*
+Exercise 6: Replace elements
+
+1) Replace 'pizza' in the `foods` array with 'sushi' and 'cupcake'.
+
+Complete Exercise 6 in the space below:
+*/
+
+foods.splice(1, 1, 'sushi', 'cupcake')
+
+console.log('Exercise 6 result:', foods);
