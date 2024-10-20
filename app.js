@@ -151,18 +151,15 @@ Complete Exercise 11 in the space below:
 */
 
 const nums = [100, 5, 23, 15, 21, 72, 9, 45, 66, 7, 81, 90];
+
+function findOdds(nums) {
 const odds = []
-
-for (let number of nums) { //for index 0 to index 10, run the below fucntion
-    function isOdd(number){ //function isOdd 
-    return number % 2 !== 0
-       }
-       console.log(isOdd(number))
+for (i = 0; i < 12; i++) { //for index 0 to index 11, run the below fucntion
+    if (nums[i] % 2 !== 0) {
+    odds.push(nums[i])   
     }
-   
-    
-
-  
-
-
-console.log('Exercise 11 result:', odds);
+}
+return odds
+}
+const oddNumbers = findOdds(nums)
+console.log('Exercise 11 result:', oddNumbers);
