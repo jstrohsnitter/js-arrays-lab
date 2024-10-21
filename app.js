@@ -272,7 +272,7 @@ Complete Exercise 15 in the space below:
 */
 
 let total = 0
-for(let i = 0; i < 3; i++) {
+for(let i = 0; i < 4; i++) {
    numArrays[i].forEach(banana => {
       total += banana
    })
